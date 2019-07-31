@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset= "utf-8">
+        <title>Mood Quiz | Question 2</title>
+        <!--Link CSS to HTML-->
+        <link rel= "stylesheet" type= "text/css" href= "/static/flask_style.css">
+        <!-- Compiled and minified CSS -->
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+        
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Righteous&display=swap" rel="stylesheet">
+        
+    </head>
+    <body id= "question2-page">
+        <div id= "q1_container" class="container">
+            <div class= "q2-title">
+                <h1>Q2</h1>
+            </div>
+            
+            <div class= "q1-content">
+                <p>If you were with your friends, what would you be doing?</p>
+                <form method = "POST" action= "/question/3">
+                    <ul>
+                        <li><input type="radio" name="choice" value="B" required> Have fun/Get lit</li>
+                        <li><input type="radio" name="choice" value="C" required> Stare into space</li>
+                        <li><input type="radio" name="choice" value="A" required> Nothing, I would rather be alone</li>
+                        <div class="next">
+                            <input class= "next-button" type="submit" value="Next Question">
+                        </div>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>

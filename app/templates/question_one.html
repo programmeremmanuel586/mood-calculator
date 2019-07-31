@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mood Quiz | Question 1</title>
+    <!--Link CSS to HTML-->
+    <link rel="stylesheet" type="text/css" href="/static/flask_style.css">
+    <!-- Compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="question1-page">
+    <div id="q1_container" class="container">
+        <div class="q1-title">
+            <h1>Q1</h1>
+        </div>
+
+        <div class="q1-content">
+
+            <!--<input type="radio" name="choice">/>-->
+            <p>What is your facial expression right now?</p>
+            <form method="POST" action="/question/2">
+                <ul>
+                    <li><input type="radio" name="choice" value="A" required> Frown</li>
+                    <li><input type="radio" name="choice" value="B" required> Smile</li>
+                    <li><input type="radio" name="choice" value="C" required> Straight Face</li>
+                    <div class="next">
+                        <input class= "next-button" type="submit" value="Next Question">
+                    </div>
+                </ul>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+</body>
+
+</html>

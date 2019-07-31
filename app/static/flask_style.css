@@ -1,0 +1,278 @@
+/*general*/
+
+/*flask project*/
+
+body {
+    
+}
+
+.container {
+    border: 2px solid;
+    position: relative;
+    top: 100px;
+}
+
+/*starting page*/
+
+#home-page {
+    background-image: url("https://media0.giphy.com/media/l41lHDSvmwnQGDUD6/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: 1400px 700px;
+}
+
+#home-container {
+    background-color: #f3f3f3;
+    border: 2px solid;
+    border-radius: 1000px;
+    top: 80px;
+    width: 50%;
+}
+
+.title {
+    border-bottom: 2px solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.title h1 {
+    font-size: 55px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.mood-text {
+    text-transform: uppercase;
+}
+
+.quiz-info {
+    width: 80%;
+    margin: auto;
+    /*border: 2px solid;*/
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.quiz-info p {
+    font-size: 35px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.start-quiz {
+    border: 1px solid;
+    border-radius: 100%;
+    width: 20%;
+    text-align: center;
+    position: relative;
+    left: 60%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 10px;
+    -webkit-box-shadow: 9px 7px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 7px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 9px 7px 5px -1px rgba(0,0,0,0.75);
+    /*transition: all 0.1s ease-in-out;*/
+    background-color: #388e3c;
+}
+.start-quiz:hover {
+    background-color: #1b5e20;
+}
+.start-quiz:active {
+    top: 5px;
+    -webkit-box-shadow: 3px 4px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 4px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 3px 4px 5px -1px rgba(0,0,0,0.75);
+    
+}
+
+
+.start-quiz a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+
+/*question page styling*/
+
+#question1-page {
+    background-color: #00e676;
+}
+
+#q1_container {
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    top: 40px;
+    font-family: 'Righteous', cursive;
+    border: 4px solid;
+    -webkit-box-shadow: 7px 7px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 2px 0px rgba(0,0,0,0.75);
+    
+}
+
+.q1-title {
+    border: 4px outset;
+    width: 10%;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+.q1-title:hover {
+    color: #f3f3f3;
+    background-color: #00e676;
+    cursor: pointer;
+}
+.q1-title:active {
+    border: 4px inset;
+}
+
+
+.q1-title h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+.q1-content {
+    border: 5px dashed;
+    width: 80%;
+    margin: auto;
+}
+.q1-content p {
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+.q1-content input {
+    height: 20px;
+    width: 30px;
+}
+.q1-content li {
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+    line-height: 3.5rem;
+}
+
+.next {
+    /*border: 2px solid;*/
+    width: 25%;
+    padding: 15px;
+    position: relative;
+    left: 65%;
+}
+
+.next-button {
+    width: 100% !important;
+    text-align: center;
+    font-size: 20px;
+    height: 60px !important;
+    background-color: #009933;
+    color: #f3f3f3;
+    font-family: 'Righteous', cursive;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    border: 2px solid #009933;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.next-button:hover {
+    cursor: pointer;
+    background-color: #006622;
+    border: 2px solid #006622;
+}
+
+/*question 2 page*/
+
+#question2-page {
+    background-color: #81d4fa;
+}
+
+.q2-title {
+    border: 4px outset;
+    width: 10%;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.q2-title:hover {
+    color: #f3f3f3;
+    background-color: #81d4fa;
+    cursor: pointer;
+}
+
+.q2-title:active {
+    border: 4px inset;
+}
+.q2-title h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+
+/*question 3 page*/
+
+#question3-page {
+    background-color: #0091ea;
+}
+
+.q3-title {
+    border: 4px outset;
+    width: 10%;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.q3-title:hover {
+    color: #f3f3f3;
+    background-color: #0091ea;
+    cursor: pointer;
+}
+
+.q3-title:active {
+    border: 4px inset;
+}
+.q3-title h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+
+/*results stylying*/
+
+#results-page {
+    background-color: white;
+}
+
+#results-container {
+    border: 2px solid;
+    width: 90%;
+}
+
+.results-title {
+    border: 2px solid;
+    width: 15%;
+    margin: auto;
+}
+.results-title h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.pre-mood h2 {
+    border: 2px solid;
+    font-size: 50px;
+    width: 30%;
+}
+
+.right-mood h2 {
+    font-size: 40px;
+}
+
+

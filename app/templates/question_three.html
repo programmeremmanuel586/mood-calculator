@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset= "utf-8">
+        <title>Mood Quiz | Question 3</title>
+        <!--Link CSS to HTML-->
+        <link rel= "stylesheet" type= "text/css" href= "/static/flask_style.css">
+        <!-- Compiled and minified CSS -->
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+        
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Righteous&display=swap" rel="stylesheet">
+        
+    </head>
+    <body id= "question3-page">
+        <div id= "q1_container" class="container">
+            <div class= "q3-title">
+                <h1>Q3</h1>
+            </div>
+            
+            <div class= "q1-content">
+                <p>In one word, how would you descrie yourself?</p>
+                <form method="POST" action="/results">
+                    <ul>
+                        <li><input type="radio" name="choice" value="C" required> Okay</li>
+                        <li><input type="radio" name="choice" value="B" required> Great</li>
+                        <li><input type="radio" name="choice" value="A" required> Useless</li>
+                        <div class="next">
+                            <input class= "next-button" type="submit" value="See Results">
+                        </div>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>
