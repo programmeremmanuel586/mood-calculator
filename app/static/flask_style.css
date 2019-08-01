@@ -295,6 +295,7 @@ body {}
     background-attachment: fixed;
     background-position: center;
     background-size: 1400px 1000px;
+    font-family: 'Baloo Chettan', cursive;
 }
 
 #results-container {
@@ -308,24 +309,25 @@ body {}
     width: 50%;
     border-bottom: 5px dotted;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-top: 30px;
 }
 .sad-title h1 {
     font-size: 40px;
     text-align: center;
+    font-family: 'Baloo Chettan', cursive;
 }
 
 .sad-feeling {
     width: 30%;
     margin: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    border: 2px solid;
+    margin-bottom: 10px;
+    /*border: 2px solid;*/
     text-align: center;
+    font-family: 'Baloo Chettan', cursive;
 }
 .sad-feeling h2 {
-    font-size: 40px;
+    font-size: 70px;
 }
 
 
@@ -352,19 +354,6 @@ body {}
     left: 7%;
     margin: 40px;
 }
-
-.before-after {
-    width: 30%;
-    border: 2px solid;
-    margin: auto;
-    font-size: 30px;
-}
-
-.before-after {
-    
-}
-
-
 
 
 .sad-right-mood {
@@ -398,32 +387,242 @@ body {}
     left: 70%;
 }
 
-.homebutton-div input {
-    padding: 10px;
-    width: 100%;
+.homebutton-div .retake-button {
+    width: 100% !important;
+    text-align: center;
     font-size: 20px;
+    height: 60px !important;
+    background-color: #009933;
+    color: #f3f3f3;
+    font-family: 'Righteous', cursive;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    border: 2px solid #009933;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.homebutton-div .retake-button:hover {
+    cursor: pointer;
+    background-color: #006622;
+    border: 2px solid #006622;
+}
+
+/*meh results page*/
+
+#meh-results {
+    background-image: url("http://www.brandgradients.com/img/backgrounds/green-gradient-background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 1400px 1000px;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+#results-container {
+    background-color: #f3f3f3;
+    width: 80%;
+    position: relative;
+    top: 80px;
+}
+
+.meh-title {
+    width: 50%;
+    border-bottom: 5px ;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.meh-title h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+.meh-feeling {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+    /*border: 2px solid;*/
+    text-align: center;
+    font-family: 'Baloo Chettan', cursive;
+}
+.meh-feeling h2 {
+    font-size: 70px;
 }
 
 
+.meh-pre-mood {
+    border: 3px solid;
+    margin: 40px;
+}
+
+.meh-pre-mood h2 {
+    font-size: 30px;
+    border: 3px solid;
+    width: 25%;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    text-align: center;
+}
+
+.meh-pre-mood .meme-gallery {
+    border: 2px solid;
+    width: 87%;
+    /*padding: 15px;*/
+    position: relative;
+    left: 7%;
+    margin: 40px;
+}
 
 
+.meh-right-mood {
+    border: 3px solid;
+    margin: 40px;
+}
+
+.meh-right-mood h2 {
+    font-size: 30px;
+    border: 3px solid;
+    width: 25%;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    text-align: center;
+}
+.meh-right-mood .meme-gallery {
+    border: 2px solid;
+    width: 87%;
+    /*padding: 15px;*/
+    position: relative;
+    left: 7%;
+    margin: 40px;
+}
+
+.meh-footer {
+    border: 2px solid;
+    background-color: #00802b;
+    position: relative;
+    top: 100px;
+}
 
 
+/*happy results page*/
+
+#happy-results {
+    background-image: url("https://us.123rf.com/450wm/olgagi/olgagi1904/olgagi190400192/121197679-a-festive-abstract-golden-yellow-gradient-background-texture-with-glitter-defocused-sparkle-bokeh-ci.jpg?ver=6");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 1400px 1000px;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+#happy-container {
+    background-color: #f3f3f3;
+    width: 80%;
+    position: relative;
+    top: 80px;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+.happy-title {
+    width: 50%;
+    border-bottom: 5px dotted;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.happy-title h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+.happy-feeling h2 {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 10px;
+    /*border: 2px solid;*/
+    text-align: center;
+    font-family: 'Baloo Chettan', cursive;
+}
+.happy-feeling h2 {
+    font-size: 70px;
+}
 
 
+.happy-pre-mood {
+    border: 3px solid;
+    margin: 40px;
+}
 
+.happy-pre-mood h2 {
+    font-size: 30px;
+    border: 3px solid;
+    width: 25%;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Baloo Chettan', cursive;
+}
 
+.happy-pre-mood .meme-gallery {
+    border: 2px solid;
+    width: 87%;
+    /*padding: 15px;*/
+    position: relative;
+    left: 7%;
+    margin: 40px;
+}
 
+.happy-right-mood {
+    font-size: 30px;
+    border: 3px solid;
+    width: 87%;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+.happy-footer {
+    border: 2px solid;
+    background-color: #ccff33;
+    position: relative;
+    top: 100px;
+}
+.happy-footer p {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #1a1a1a;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Baloo Chettan', cursive;
+}
 
 
 
 footer {
-    height: 200px;
     border: 2px solid;
-    background-color: dodgerblue;
+    background-color: #006699;
     position: relative;
-    top: 400px;
+    top: 100px;
 }
 
+footer p {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Signika Negative', sans-serif;
+}
 
 

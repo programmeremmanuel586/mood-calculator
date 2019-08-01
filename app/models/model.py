@@ -12,8 +12,16 @@ def get_score(score, user_input):
         score += 3
         return score
 
-# def get_mood(score)
-#     if score>
+def get_mood(score):
+    mood = ""
+    if score >= 3 and score <=4:
+        mood = "Sad"
+    elif score >= 5 and score <=7:
+        mood= "Happy"
+    elif score >= 8 and score <=10:
+        mood= "Meh"
+    return mood
+        
     
     
 
