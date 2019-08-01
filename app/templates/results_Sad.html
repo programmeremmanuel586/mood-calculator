@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset= "utf-8">
+        <title>Mood Quiz | Your Results</title>
+        <!--Link CSS to HTML-->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='flask_style.css') }}">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Righteous&display=swap" rel="stylesheet">
+        
+    </head>
+    <body id= "sad-results">
+        
+        <div id= "results-container" class= "container">
+            <div class= "sad-title">
+                <h1>Boo hoo! You're mood is:</h1>
+            </div>
+            <div class= "sad-feeling">
+                <h2>Sad</h2>
+            </div>
+            
+            <div class= "sad-pre-mood">
+                <h2>Current Mood: </h2>
+                
+                <div id= "sad" class="meme-gallery">
+                    <div class="row">
+                        <div class= "col s3 m3 l3">
+                            <img src= "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" width= "200px">
+                        </div>
+                        <div class= "col s3 m3 l3">
+                            <img src= "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" width= "200px">
+                        </div>
+                        <div class= "col s3 m3 l3">
+                            <img src= "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" width= "200px">
+                        </div>
+                        <div class= "col s3 m3 l3">
+                            <img src= "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" width= "200px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class= "before-after">
+                <h2>And then...</h2>
+            </div>
+            
+            
+            <div class="sad-right-mood">
+                <h2>How you should be feeling:</h2>
+                <div id= "sad-to-happy" class= "meme-gallery">
+                    <div class= "row">
+                        <div class="col s3 m3 l3">
+                            <img src= "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" width= "200px">
+                        </div>
+                        <div class="col s3 m3 l3">
+                            <img src= "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" width= "200px">
+                        </div>
+                        <div class="col s3 m3 l3">
+                            <img src= "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" width= "200px">
+                        </div>
+                        <div class="col s3 m3 l3">
+                            <img src= "https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" width= "200px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <form class= "homebutton-div" method= "GET" action= "/back_to_homepage">
+                <input type= "submit" value= "Home Page">
+            </form>
+            
+            
+        </div>
+        
+        
+        <footer>
+            <p>This project was created by Emmanuel | Web Designer and Adange | Programmer</p>
+        </footer>
+        
+        <!--this text will go into copyright page through a link-->
+        <!--<p>&copy; Copyrighted by two individuals who poured sweat and tears working on this site. Under no circumstances may this site be under the name of any individual but Emmanuel or Adange. Violators will be sued and their money willl go <em>directly</em> into their payment for college. It's your choice. Other than that, enjoy the website :D</p>-->
+        
+        
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>

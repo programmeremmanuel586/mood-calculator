@@ -12,8 +12,9 @@ def get_score(score, user_input):
         score += 3
         return score
 
-# def get_mood():
-#     if 
+# def get_mood(score)
+#     if score>
+    
     
 
 

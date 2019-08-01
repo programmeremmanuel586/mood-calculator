@@ -2,9 +2,7 @@
 
 /*flask project*/
 
-body {
-    
-}
+body {}
 
 .container {
     border: 2px solid;
@@ -36,6 +34,7 @@ body {
     margin: auto;
     text-align: center;
 }
+
 .title h1 {
     font-size: 55px;
     font-family: 'Russo One', sans-serif;
@@ -53,6 +52,7 @@ body {
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
 .quiz-info p {
     font-size: 35px;
     font-family: 'Luckiest Guy', cursive;
@@ -68,21 +68,23 @@ body {
     margin-bottom: 20px;
     font-size: 20px;
     padding: 10px;
-    -webkit-box-shadow: 9px 7px 5px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 9px 7px 5px -1px rgba(0,0,0,0.75);
-    box-shadow: 9px 7px 5px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 9px 7px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 7px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 7px 5px -1px rgba(0, 0, 0, 0.75);
     /*transition: all 0.1s ease-in-out;*/
     background-color: #388e3c;
 }
+
 .start-quiz:hover {
     background-color: #1b5e20;
 }
+
 .start-quiz:active {
     top: 5px;
-    -webkit-box-shadow: 3px 4px 5px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 4px 5px -1px rgba(0,0,0,0.75);
-    box-shadow: 3px 4px 5px -1px rgba(0,0,0,0.75);
-    
+    -webkit-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.75);
+
 }
 
 
@@ -107,10 +109,10 @@ body {
     top: 40px;
     font-family: 'Righteous', cursive;
     border: 4px solid;
-    -webkit-box-shadow: 7px 7px 2px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 7px 7px 2px 0px rgba(0,0,0,0.75);
-    box-shadow: 7px 7px 2px 0px rgba(0,0,0,0.75);
-    
+    -webkit-box-shadow: 7px 7px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 7px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 7px 2px 0px rgba(0, 0, 0, 0.75);
+
 }
 
 .q1-title {
@@ -119,11 +121,13 @@ body {
     margin-bottom: 30px;
     transition: all 0.3s ease;
 }
+
 .q1-title:hover {
     color: #f3f3f3;
     background-color: #00e676;
     cursor: pointer;
 }
+
 .q1-title:active {
     border: 4px inset;
 }
@@ -140,15 +144,18 @@ body {
     width: 80%;
     margin: auto;
 }
+
 .q1-content p {
     font-size: 30px;
     font-family: 'Righteous', cursive;
     text-align: center;
 }
+
 .q1-content input {
     height: 20px;
     width: 30px;
 }
+
 .q1-content li {
     list-style: none;
     font-size: 30px;
@@ -172,9 +179,9 @@ body {
     background-color: #009933;
     color: #f3f3f3;
     font-family: 'Righteous', cursive;
-    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
     border: 2px solid #009933;
     padding: 15px;
     transition: all 0.3s ease;
@@ -208,6 +215,7 @@ body {
 .q2-title:active {
     border: 4px inset;
 }
+
 .q2-title h1 {
     font-size: 30px;
     text-align: center;
@@ -237,6 +245,7 @@ body {
 .q3-title:active {
     border: 4px inset;
 }
+
 .q3-title h1 {
     font-size: 30px;
     text-align: center;
@@ -246,13 +255,14 @@ body {
 
 /*results stylying*/
 
-#results-page {
-    background-color: white;
+#happy-results {
+    background-color: #FF851B;
 }
 
-#results-container {
-    border: 2px solid;
+#happy-container {
+    border: 11px solid;
     width: 90%;
+    background-color: red;
 }
 
 .results-title {
@@ -260,6 +270,7 @@ body {
     width: 15%;
     margin: auto;
 }
+
 .results-title h1 {
     font-size: 40px;
     text-align: center;
@@ -274,5 +285,145 @@ body {
 .right-mood h2 {
     font-size: 40px;
 }
+
+
+/*sad page*/
+
+#sad-results {
+    background-image: url("https://ak8.picdn.net/shutterstock/videos/1019547568/thumb/1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 1400px 1000px;
+}
+
+#results-container {
+    background-color: #f3f3f3;
+    width: 80%;
+    position: relative;
+    top: 80px;
+}
+
+.sad-title {
+    width: 50%;
+    border-bottom: 5px dotted;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.sad-title h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.sad-feeling {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 2px solid;
+    text-align: center;
+}
+.sad-feeling h2 {
+    font-size: 40px;
+}
+
+
+.sad-pre-mood {
+    border: 3px solid;
+    margin: 40px;
+}
+
+.sad-pre-mood h2 {
+    font-size: 30px;
+    border: 3px solid;
+    width: 25%;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    text-align: center;
+}
+
+.sad-pre-mood .meme-gallery {
+    border: 2px solid;
+    width: 87%;
+    /*padding: 15px;*/
+    position: relative;
+    left: 7%;
+    margin: 40px;
+}
+
+.before-after {
+    width: 30%;
+    border: 2px solid;
+    margin: auto;
+    font-size: 30px;
+}
+
+.before-after {
+    
+}
+
+
+
+
+.sad-right-mood {
+    border: 3px solid;
+    margin: 40px;
+}
+
+.sad-right-mood h2 {
+    font-size: 30px;
+    border: 3px solid;
+    width: 25%;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    text-align: center;
+}
+.sad-right-mood .meme-gallery {
+    border: 2px solid;
+    width: 87%;
+    /*padding: 15px;*/
+    position: relative;
+    left: 7%;
+    margin: 40px;
+}
+
+.homebutton-div {
+    width: 15%;
+    border: 3px solid;
+    margin: 20px;
+    position: relative;
+    left: 70%;
+}
+
+.homebutton-div input {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 200px;
+    border: 2px solid;
+    background-color: dodgerblue;
+    position: relative;
+    top: 400px;
+}
+
 
 

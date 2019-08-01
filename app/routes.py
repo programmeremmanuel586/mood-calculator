@@ -28,15 +28,19 @@ def question(number):
 
 
 # to results page
-@app.route('/results', methods=["GET", "POST"])
-def results():
-    if request.method == "POST":
-        global score
-        choice = request.form["choice"]
-        score = model.get_score(score, choice)
-        # return str(score)
-        return render_template('results.html')
+# @app.route('/results', methods=["GET", "POST"])
+# def results():
+#     if request.method == "POST":
+#         global score
+#         choice = request.form["choice"]
+#         score = model.get_score(score, choice)
+#         # return str(score)
+#         return render_template('results.html')
     
+    
+@app.route('/results_Sad')
+def results_Sad():
+    return render_template("/results_Sad.html")
 
 @app.route('/back_to_homepage')
 def back_to_homepage():
