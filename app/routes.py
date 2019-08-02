@@ -7,6 +7,7 @@ score = 0
 @app.route('/')
 @app.route('/index')
 def index():
+    global score
     score = 0
     return render_template("index.html")
     
