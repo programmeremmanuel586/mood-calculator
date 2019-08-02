@@ -33,6 +33,7 @@ def results():
         choice = request.form["choice"]
         score = model.get_score(score, choice)
         mood = model.get_mood(score)
+        print(mood)
         # return str(score)
         if mood == "Happy":
             return render_template('/results_Happy.html')
@@ -40,7 +41,11 @@ def results():
             return render_template('/results_Sad.html')
         elif mood == "Meh":
             return render_template('/results_Meh.html')
-            
+        else:
+            score=0
+            return redirect('/')   
+    else:
+        return redirect('/')
     
     
 
