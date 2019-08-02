@@ -1,14 +1,17 @@
 from app import app
-from flask import render_template, redirect, request, url_for
+from flask import render_template, redirect, request, url_for, session
 from app.models import model, formopener
 
-score = 0 
+app.secret_key = b'=\xcf\xe8\x85o\xb54W\xf9\xf0\x9dz$\xa2\x8f^\xd9\x0e\xc2\xdc\x95ON.\x85\xe4\xf9\xc6\x8c\xed\xf7V'
+
+
+
 
 @app.route('/')
 @app.route('/index')
 def index():
-    global score
-    score = 0
+
+    session['score'] = 0
     return render_template("index.html")
     
     
@@ -16,9 +19,8 @@ def index():
 @app.route('/question/<number>', methods=["GET","POST"])
 def question(number):
     if request.method == "POST":
-        global score
         choice = request.form["choice"]
-        score = model.get_score(score, choice)
+        session['score'] = model.get_score(session['score'], choice)
     question_dict = {
         "1": "question_one.html",
         "2": "question_two.html",
@@ -30,10 +32,9 @@ def question(number):
 @app.route('/results', methods=["GET", "POST"])
 def results():
     if request.method == "POST":
-        global score
         choice = request.form["choice"]
-        score = model.get_score(score, choice)
-        mood = model.get_mood(score)
+        session['score'] = model.get_score(session['score'], choice)
+        mood = model.get_mood(session['score'])
         print(mood)
         # return str(score)
         if mood == "Happy":
@@ -43,7 +44,7 @@ def results():
         elif mood == "Meh":
             return render_template('/results_Meh.html')
         else:
-            score=0
+            session['score'] = 0
             return redirect('/')   
     else:
         return redirect('/')
@@ -52,7 +53,7 @@ def results():
 
 @app.route('/back_to_homepage')
 def back_to_homepage():
-    global score
-    score=0
+    session['score'] = 0
+    session.clear()
     return redirect('/index')
     
